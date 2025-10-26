@@ -1,0 +1,80 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Para ti ✨</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&family=Inter:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="scene">
+      <header class="hero">
+        <h1 class="name">I love you</h1>
+        <p class="subtitle">Te extraño</p>
+        <button id="openBtn" class="cta">Abrir sorpresa</button>
+      </header>
+
+      <main class="card">
+        <div class="left">
+          <img
+            src="https://i.redd.it/dnityxlk2rmc1.jpeg"
+            alt=""
+            aria-hidden="true"
+            class="placeholder"
+          />
+        </div>
+        <div class="right">
+          <h2>Siempre tú</h2>
+          <p class="lead">
+            Eres el recuerdo que quiero repetir una y mil veces
+          </p>
+          <ul class="list">
+            <!-- <li>🌅 Amaneceres juntos</li>
+            <li>🎶 Canciones que nos cuentan</li>
+            <li>🤝 Todos los planes por venir</li> -->
+          </ul>
+        </div>
+      </main>
+
+      <!-- Corazones flotantes -->
+      <div class="hearts" aria-hidden="true"></div>
+
+      <!-- Modal sorpresa -->
+      <div
+        id="modal"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-hidden="true"
+      >
+        <div class="modal-content">
+          <button id="closeBtn" class="close" aria-label="Cerrar">×</button>
+          <h3>Te dedico esta cancion</h3>
+          <p class="poem"></p>
+          <iframe
+            data-testid="embed-iframe"
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/track/4TFNKnMWjcMWzpkSwQrrcu?utm_source=generator"
+            width="100%"
+            height="202"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- <footer class="footer">
+        Con amor — <span class="by">tu nombre</span>
+      </footer> -->
+    </div>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
